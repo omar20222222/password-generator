@@ -35,7 +35,36 @@ function generatePassword() {
   var symbolList = ["@" , "'"]
 
   var optionCart = []
-  
+
+  if (userWantsLowercase = true) {
+    optionCart.push(lowercaseList)
+  }
+
+  if (userWantsUppercase = true) {
+    optionCart.push(UppercaseList)
+  }
+
+  if (userWantsNumber = true) {
+    optionCart.push(numbersList)
+  }
+
+  if (userWantsSymbols= true) {
+    optionCart.push(symbolList)
+  }
+
+  console.log(optionCart)
+
+  var generatedPassword = ""
+
+  for (var i = 0; i < passwordLength; i++) {
+    var randomList = getRandomItem(optionCart)
+    var randomChar = getRandomItem(randomList)
+    generatedPassword += randomChar
+  }
+
+  console.log(generatePassword)
+  return generatedPassword
+
 
 // Write password to the #password input
 function writePassword() {
