@@ -9,7 +9,7 @@ HTML
 CSS
 
 JavaScript
-
+image.png
 
 > My Github link - > https://github.com/omar20222222/password-generator
 
